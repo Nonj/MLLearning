@@ -59,3 +59,14 @@ plt.title('Salary vs. Experience (Training set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
+
+# Test set Plots
+plt.scatter(X_test, Y_test, color = 'Red');
+
+# X train is the X-coordinate of our observation (years of experience)
+# regressor.predict(X_train) is the PREDICTED (salary) line in blue
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.title('Salary vs. Experience (Test Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
